@@ -5,6 +5,7 @@ import MainSwiper from "./components/MainSwiper/mainSwiper";
 import MainOffer from "./components/MainOffer/mainOffer";
 import MainDishes from "./components/MainDishes/mainDishes";
 import MainServices from "./components/MainServices/mainServices";
+import MainNews from "./components/MainNews/mainNews";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <MainOffer/>
       <MainDishes/>
       <MainServices/>
+      <MainNews/>
     </>
   );
 }

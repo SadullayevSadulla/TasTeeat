@@ -16,7 +16,7 @@ const MainServices = () => {
           <div className="w-[255px] h-[235px] border border-24  border-[#4A4F57] flex items-center justify-center">
             <div className="w-[210px] h-[190px] border border-[#4A4F57] flex flex-col items-center justify-center">
               <img src="/Vector (2).png" alt="" className="mb-6" />
-              <h1 className="text-white text-[30px] font-normal font-['Cormorant_Infant']">
+              <h1 className="text-white text-[25px] font-[400] font-normal font-['Cormorant_Infant']">
                 Opened 24/7
               </h1>
             </div>
@@ -24,7 +24,7 @@ const MainServices = () => {
           <div className="w-[255px] h-[235px] border border-24 border-[#4A4F57] flex items-center justify-center">
             <div className="w-[210px] h-[190px] border border-[#4A4F57] flex flex-col items-center justify-center">
               <img src="/IMAGE (22).png" alt="" className="mb-6" />
-              <h1 className="text-white text-[30px] font-normal font-['Cormorant_Infant']">
+              <h1 className="text-white text-[25px] font-[400] font-normal font-['Cormorant_Infant']">
                 Special Menus
               </h1>
             </div>
@@ -32,7 +32,7 @@ const MainServices = () => {
           <div className="w-[255px] h-[235px] border border-24 border-[#4A4F57] flex items-center justify-center">
             <div className="w-[210px] h-[190px] border border-[#4A4F57] flex flex-col items-center justify-center">
               <img src="/Vector (3).png" alt="" className="mb-6" />
-              <h1 className="text-white text-[30px] font-normal font-['Cormorant_Infant']">
+              <h1 className="text-white text-[25px] font-[400] font-normal font-['Cormorant_Infant']">
                 Home Delivery
               </h1>
             </div>
