@@ -4,6 +4,7 @@ import MainMenu from "./components/MainMenu/mainMenu";
 import MainSwiper from "./components/MainSwiper/mainSwiper";
 import MainOffer from "./components/MainOffer/mainOffer";
 import MainDishes from "./components/MainDishes/mainDishes";
+import MainServices from "./components/MainServices/mainServices";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <MainSwiper/>
       <MainOffer/>
       <MainDishes/>
+      <MainServices/>
     </>
   );
 }
