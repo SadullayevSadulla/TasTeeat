@@ -11,7 +11,7 @@ const Header = () => {
                                 </button>
                             </div>
                             <div className="header_logo">
-                                <img src="/IMAGE.png" alt="Logo" />
+                                <img src="/IMAGE.png" alt="Logo" id="br"/>
                             </div>
 
                             <div className="header_button_right">

@@ -6,6 +6,8 @@ import MainOffer from "./components/MainOffer/mainOffer";
 import MainDishes from "./components/MainDishes/mainDishes";
 import MainServices from "./components/MainServices/mainServices";
 import MainNews from "./components/MainNews/mainNews";
+import MainReservation from "./components/MainReservation/mainReservation";
+import Footer from "./components/Footer/footer";
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <MainDishes/>
       <MainServices/>
       <MainNews/>
+      <MainReservation/>
+      <Footer/>
     </>
   );
 }
