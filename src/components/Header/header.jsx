@@ -11,7 +11,7 @@ const Header = () => {
                                 </button>
                             </div>
                             <div className="header_logo">
-                                <img src="/IMAGE.png" alt="Logo" id="br"/>
+                                <img src="/IMAGE.png" alt="Logo" id="br" />
                             </div>
 
                             <div className="header_button_right">
@@ -34,6 +34,8 @@ const Header = () => {
                                 <a href="#" className="hover:text-[#E1B168] transition duration-300">Contact Us</a>
                             </nav>
                         </div>
+                    </div>
+                    <div className="sm:flex-wrap flex items-center">
                         <div className="header_icon flex items-center gap-4">
                             <a href="https://www.instagram.com/sadullayev.0627/" target="_blank" rel="noopener noreferrer">
                                 <img src="/IMAGE (1).png" alt="Instagram" className="cursor-pointer" />
@@ -42,15 +44,15 @@ const Header = () => {
                             <img src="/IMAGE (2).png" alt="Twitter" />
                             <img src="/Vector (1).png" alt="LinkedIn" />
                         </div>
-                    </div>
-                    <div className="hero_secton flex items-center justify-between mt-[100px]">
-                        <div className="hero_br">
-                            <h1 className="font-['Josefin_Sans'] text-[90px] font-[400] text-white">Welcome to Restaurant</h1>
-                            <p className="text-white my-[26px] ax-w-[616px]">The people, food and the prime locations make the perfect place good friends & family to come together and have great time.</p>
-                            <button className="border border-[#E1B168] px-8 py-3 text-[#292E36] font-semibold text-white hover:bg-[#E1B168] hover:text-[#292E36] transition duration-300 cursor-pointer">View Menu</button>
-                        </div>
-                        <div className="hero_ik">
-                            <img src="/Frame.png" alt="Hero Image" />
+                        <div className="hero_secton flex items-center justify-between mt-[100px]">
+                            <div className="hero_br">
+                                <h1 className="font-['Josefin_Sans'] text-[90px] font-[400] text-white">Welcome to Restaurant</h1>
+                                <p className="text-white my-[26px] ax-w-[616px]">The people, food and the prime locations make the perfect place good friends & family to come together and have great time.</p>
+                                <button className="border border-[#E1B168] px-8 py-3 text-[#292E36] font-semibold text-white hover:bg-[#E1B168] hover:text-[#292E36] transition duration-300 cursor-pointer">View Menu</button>
+                            </div>
+                            <div className="hero_ik">
+                                <img src="/Frame.png" alt="Hero Image" />
+                            </div>
                         </div>
                     </div>
                 </div>
