@@ -9,7 +9,7 @@ function MainReservation() {
       <div className="relative container flex justify-center px-4">
         <div className="w-full max-w-[970px] bg-[#292E36]/80 px-[24px] sm:px-[50px] lg:px-[95px] py-[40px] sm:py-[70px] lg:py-[110px]">
           <div className="flex justify-center">
-            <img src="/qwerty.png" alt="" className="w-[36px] sm:w-auto" />
+            <img src="/qwerty.png" alt="" className="w-[36px] sm:w-auto filter invert brightness-200" />
           </div>
           <h1 className="text-center text-white text-[28px] sm:text-[36px] lg:text-[45px] font-['Cormorant_Infant'] mt-5 mb-8 lg:mb-12">
             Book Your Table
@@ -39,9 +39,8 @@ function MainReservation() {
                 className="h-[56px] sm:h-[64px] lg:h-[72px] bg-transparent border border-[#6B6F76] px-5 lg:px-7 text-[16px] lg:text-[22px] text-white placeholder:text-white outline-none w-full"
               />
               <input
-                type="text"
-                placeholder="Date"
-                className="h-[56px] sm:h-[64px] lg:h-[72px] bg-transparent border border-[#6B6F76] px-5 lg:px-7 text-[16px] lg:text-[22px] text-white placeholder:text-white outline-none w-full"
+                type="date"
+                className="h-[56px] sm:h-[64px] lg:h-[72px] bg-transparent border border-[#6B6F76] px-5 lg:px-7 text-[16px] lg:text-[22px] text-white outline-none w-full"
               />
             </div>
             <div className="flex justify-center mt-8 lg:mt-12">

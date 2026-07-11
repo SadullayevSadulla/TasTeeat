@@ -1,8 +1,22 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
 
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsMenuOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
     const navLinks = [
         {
             label: "Home",
@@ -44,7 +58,7 @@ const Header = () => {
                         </button>
                     </div>
 
-                    <div className="relative">
+                    <div ref={menuRef} className="relative">
                         <div className="flex items-center justify-between bg-[#292E36] border-t border-white/10 px-5 py-3">
                             <button
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -87,7 +101,7 @@ const Header = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className={`absolute top-[100%] left-0 w-full bg-[#5B5B5B] z-50 overflow-hidden transition-all duration-300 ${isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0" }`}>
+                        <div className={`absolute top-[100%] left-0 w-full bg-[#5B5B5B] z-50 overflow-hidden transition-all duration-300 ${isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
                             <nav className="flex flex-col font-['Josefin_Sans']">
                                 {navLinks.map((link) => (
                                     <a
