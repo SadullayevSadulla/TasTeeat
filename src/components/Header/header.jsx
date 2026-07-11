@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../LanguageSwitcher/languageSwitcher";
 
 const Header = () => {
+    const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuRef = useRef(null);
 
@@ -18,30 +21,12 @@ const Header = () => {
         };
     }, []);
     const navLinks = [
-        {
-            label: "Home",
-            href: "home"
-        },
-        {
-            label: "About Us",
-            href: "about"
-        },
-        {
-            label: "Our Menu",
-            href: "menu"
-        },
-        {
-            label: "Pages",
-            href: "pages"
-        },
-        {
-            label: "Blog",
-            href: "blog"
-        },
-        {
-            label: "Contact Us",
-            href: "contact"
-        },
+        { label: t("nav.home"), href: "home" },
+        { label: t("nav.about"), href: "about" },
+        { label: t("nav.menu"), href: "menu" },
+        { label: t("nav.pages"), href: "pages" },
+        { label: t("nav.blog"), href: "blog" },
+        { label: t("nav.contact"), href: "contact" },
     ];
 
     return (
@@ -50,11 +35,11 @@ const Header = () => {
                 <div className="lg:hidden">
                     <div className="border-b border-white flex flex-col items-center gap-6 py-8 px-5">
                         <button className="border border-[#E1B168] px-8 py-3 text-white text-[14px] font-['Josefin_Sans']">
-                            Call - 123 456 789
+                            {t("header.call")}
                         </button>
                         <img src="/IMAGE.png" alt="Logo" className="h-[110px] w-auto" />
                         <button className="bg-[#E1B168] px-10 py-3 text-[#292E36] font-semibold font-['Josefin_Sans']">
-                            Reservation
+                            {t("header.reservation")}
                         </button>
                     </div>
 
@@ -99,13 +84,14 @@ const Header = () => {
                                 <a href="#" className="w-[32px] h-[32px] flex items-center justify-center">
                                     <img src="/Vector (1).png" alt="LinkedIn" className="w-[14px] h-[14px]" />
                                 </a>
+                                <LanguageSwitcher />
                             </div>
                         </div>
                         <div className={`absolute top-[100%] left-0 w-full bg-[#5B5B5B] z-50 overflow-hidden transition-all duration-300 ${isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
                             <nav className="flex flex-col font-['Josefin_Sans']">
                                 {navLinks.map((link) => (
                                     <a
-                                        key={link.label}
+                                        key={link.href}
                                         href={`#${link.href}`}
                                         onClick={() => setIsMenuOpen(false)}
                                         className="px-5 py-4 border-b border-white/10 text-white hover:text-[#E1B168] transition duration-300"
@@ -118,19 +104,29 @@ const Header = () => {
                     </div>
                     <div className="text-center px-5 pt-[50px] pb-[10px]">
                         <h1 className="font-['Josefin_Sans'] text-[34px] sm:text-[42px] font-[400] text-white leading-[1.2]">
-                            Welcome to<br />Restaurant
+                            {t("header.welcomeTo")}<br />{t("header.restaurant")}
                         </h1>
                         <p className="text-white text-[13px] my-[20px] max-w-[380px] mx-auto font-['Josefin_Sans']">
-                            The people, food and the prime locations make the perfect place good friends & family to come together and have great time.
+                            {t("header.heroSubtitle")}
                         </p>
                         <button className="border border-[#E1B168] px-8 py-3 text-white font-semibold hover:bg-[#E1B168] hover:text-[#292E36] transition duration-300 cursor-pointer font-['Josefin_Sans']">
-                            View Menu
+                            {t("header.viewMenu")}
                         </button>
                     </div>
 
-                    <div className="relative flex justify-center pt-[40px] overflow-hidden">
-                        <div className="">
-                            <img src="/Frame.png" alt="Hero" className="w-full h-full object-cover" />
+                    <div className="relative w-full flex justify-center items-center py-[40px]">
+                        <div className="relative inline-block">
+                            <img
+                                src="/qw12qw.png"
+                                alt="Hero Image"
+                                className="w-full max-w-[520px] relative z-10"
+                            />
+
+                            <img
+                                src="/IMAGE (30).png"
+                                alt=""
+                                className="absolute top-[-40px] right-[40px] w-[200px] md:w-[220px] lg:w-[250px] animate-spin-slow z-20"
+                            />
                         </div>
                     </div>
                 </div>
@@ -140,7 +136,7 @@ const Header = () => {
                             <div className="header_top flex items-center justify-between py-8">
                                 <div className="header_left_button">
                                     <button className="border border-[#E1B168] px-8 py-3 text-white">
-                                        Call - 123 456 789
+                                        {t("header.call")}
                                     </button>
                                 </div>
                                 <div className="header_logo">
@@ -148,7 +144,7 @@ const Header = () => {
                                 </div>
                                 <div className="header_button_right">
                                     <button className="bg-[#E1B168] px-8 py-3 text-[#292E36] font-semibold">
-                                        Reservation
+                                        {t("header.reservation")}
                                     </button>
                                 </div>
                             </div>
@@ -160,7 +156,7 @@ const Header = () => {
                                 <nav className="flex items-center gap-8 text-white font-['Josefin_Sans']">
                                     {navLinks.map((link) => (
                                         <a
-                                            key={link.label}
+                                            key={link.href}
                                             href={`#${link.href}`}
                                             className="hover:text-[#E1B168] transition duration-300"
                                         >
@@ -176,16 +172,23 @@ const Header = () => {
                                 <img src="/Vector.png" alt="Facebook" />
                                 <img src="/IMAGE (2).png" alt="Twitter" />
                                 <img src="/Vector (1).png" alt="LinkedIn" />
+                                <LanguageSwitcher />
                             </div>
                         </div>
                         <div className="hero_secton flex items-center justify-between mt-[100px]">
                             <div className="hero_br">
-                                <h1 className="font-['Josefin_Sans'] text-[90px] font-[400] text-white">Welcome to Restaurant</h1>
-                                <p className="text-white my-[26px] max-w-[616px]">The people, food and the prime locations make the perfect place good friends & family to come together and have great time.</p>
-                                <button className="border border-[#E1B168] px-8 py-3 text-[#292E36] font-semibold text-white hover:bg-[#E1B168] hover:text-[#292E36] transition duration-300 cursor-pointer">View Menu</button>
+                                <h1 className="font-['Josefin_Sans'] text-[90px] font-[400] text-white">{t("header.welcomeTo")} {t("header.restaurant")}</h1>
+                                <p className="text-white my-[26px] max-w-[616px]">{t("header.heroSubtitle")}</p>
+                                <button className="border border-[#E1B168] px-8 py-3 text-[#292E36] font-semibold text-white hover:bg-[#E1B168] hover:text-[#292E36] transition duration-300 cursor-pointer">{t("header.viewMenu")}</button>
                             </div>
-                            <div className="hero_ik">
-                                <img src="/Frame.png" alt="Hero Image" />
+                            <div className="hero_ik relative">
+                                <img src="/qw12qw.png" alt="Hero Image" className="relative z-10" />
+
+                                <img
+                                    src="/IMAGE (30).png"
+                                    alt=""
+                                    className="absolute top-[-40px] right-[1px] w-[240px] h-[240px] animate-spin-slow z-20"
+                                />
                             </div>
                         </div>
                     </div>

@@ -1,10 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <footer className="bg-[#292E36] text-white pt-[60px] lg:pt-[120px]">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0 mb-[40px] lg:mb-[70px] text-center lg:text-left">
                     <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-['Cormorant_Infant'] order-2 lg:order-1">
-                        #TheTastEat
+                        {t("footer.hashtag")}
                     </h2>
                     <img src="/IMAGE.png" alt="Logo" className="order-1 lg:order-2 h-[50px] lg:h-auto" />
                     <div className="footer_icon flex gap-[14px] lg:gap-[10px] order-3">
@@ -31,32 +34,32 @@ const Footer = () => {
                     <div className="flex flex-col items-center lg:items-start">
                         <img src="/Frame (15).png" alt="" className="mb-6 lg:mb-8 w-[100px] " />
                         <p className="text-[17px] sm:text-[19px] lg:text-[22px] font-['Josefin_Sans'] leading-[30px] lg:leading-10">
-                            5 Rue Dalou, 75015 Paris
+                            {t("footer.address")}
                         </p>
                         <p className="text-[#E1B168] text-[17px] sm:text-[19px] lg:text-[22px] font-['Josefin_Sans'] mt-2">
-                            +123 456 789
+                            {t("footer.phone")}
                         </p>
                         <p className="text-[#E1B168] text-[17px] sm:text-[19px] lg:text-[22px] font-['Josefin_Sans'] mt-2">
-                            josefin@mail.com
+                            {t("footer.email")}
                         </p>
                     </div>
 
                     <div className="flex flex-col items-center">
                         <p className="text-center text-[17px] sm:text-[19px] lg:text-[22px] leading-[28px] lg:leading-[40px] font-['Josefin_Sans'] max-w-[500px]">
-                            Join our mailing list for updates,
+                            {t("footer.newsletterText")}
                             <br />
-                            Get news & offers events.
+                            {t("footer.newsletterText2")}
                         </p>
                         <div className="flex flex-col sm:flex-row mt-8 lg:mt-10 gap-3">
                             <input
                                 type="email"
-                                placeholder="Email"
+                                placeholder={t("footer.emailPlaceholder")}
                                 className=" sm:flex-1 h-[50px] sm:h-[56px] lg:h-[68px] bg-transparent border border-[#575B62] px-4 sm:px-5 lg:px-6 text-[16px] lg:text-[20px]  text-white outline-none  placeholder:text-white"
                             />
 
                             <button
                                 className=" w-full sm:w-[180px] lg:w-[220px] h-[50px] sm:h-[56px] lg:h-[68px] px-6 lg:px-8  bg-white text-[#292E36] text-[16px] sm:text-[18px] lg:text-[22px] font-semibold hover:bg-[#E1B168]  hover:text-white transition-all duration-300 cursor-pointer">
-                                Subscribe
+                                {t("footer.subscribe")}
                             </button>
                         </div>
                     </div>
@@ -69,16 +72,16 @@ const Footer = () => {
                         />
                         <div className="space-y-3 lg:space-y-4 text-[17px] sm:text-[19px] lg:text-[22px] font-['Josefin_Sans']">
                             <p>
-                                <span className="text-[#E1B168]">Mon - Fri:</span>{" "}
-                                7.00am - 6.00pm
+                                <span className="text-[#E1B168]">{t("footer.hoursMonFri")}</span>{" "}
+                                {t("footer.hoursMonFriTime")}
                             </p>
                             <p>
-                                <span className="text-[#E1B168]">Sat:</span>{" "}
-                                7.00am - 6.00pm
+                                <span className="text-[#E1B168]">{t("footer.hoursSat")}</span>{" "}
+                                {t("footer.hoursSatTime")}
                             </p>
                             <p>
-                                <span className="text-[#E1B168]">Sun:</span>{" "}
-                                8.00am - 6.00pm
+                                <span className="text-[#E1B168]">{t("footer.hoursSun")}</span>{" "}
+                                {t("footer.hoursSunTime")}
                             </p>
                         </div>
                     </div>
@@ -86,22 +89,22 @@ const Footer = () => {
 
                 <div className="border-t border-[#3F434B] py-6 lg:py-8 flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0 text-center lg:text-left">
                     <p className="text-[14px] sm:text-[17px] lg:text-[20px] font-['Josefin_Sans']">
-                        © Copyright - TastEat | Designed by{" "}
-                        <span className="text-[#E1B168]">VictorFlow</span> - Powered by{" "}
-                        <span className="text-[#E1B168]">Webflow</span>
+                        {t("footer.copyright")}{" "}
+                        <span className="text-[#E1B168]">{t("footer.designer")}</span> - {t("footer.poweredBy")}{" "}
+                        <span className="text-[#E1B168]">{t("footer.platform")}</span>
                     </p>
                     <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 text-[14px] sm:text-[17px] lg:text-[20px] font-['Josefin_Sans']">
                         <a href="#" className="hover:text-[#E1B168]">
-                            Styleguide
+                            {t("footer.styleguide")}
                         </a>
                         <a href="#" className="hover:text-[#E1B168]">
-                            Licenses
+                            {t("footer.licenses")}
                         </a>
                         <a href="#" className="hover:text-[#E1B168]">
-                            Protected
+                            {t("footer.protected")}
                         </a>
                         <a href="#" className="hover:text-[#E1B168]">
-                            Not Found
+                            {t("footer.notFound")}
                         </a>
                     </div>
                 </div>

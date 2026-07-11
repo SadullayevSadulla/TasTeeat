@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "menu": "Our Menu",
+    "pages": "Pages",
+    "blog": "Blog",
+    "contact": "Contact Us"
+  },
+  "header": {
+    "call": "Call - 123 456 789",
+    "reservation": "Reservation",
+    "welcomeTo": "Welcome to",
+    "restaurant": "Restaurant",
+    "heroSubtitle": "The people, food and the prime locations make the perfect place good friends & family to come together and have great time.",
+    "viewMenu": "View Menu"
+  },
+  "main": {
+    "locateUsTitle": "Locate Us",
+    "locateUsText": "Riverside 25, San Diego, California",
+    "openHoursTitle": "Open Hours",
+    "openHoursText": "Mon To Fri 9:00 AM - 9:00 PM",
+    "reservationTitle": "Reservation",
+    "reservationEmail": "restaurantate@gmail.com",
+    "storyTitle": "The Delicious Story",
+    "storyText": "The people, food and the prime locations make the perfect place for the friends & family to come together and have great time.",
+    "year1": "2018",
+    "year1Text": "Plan for this restaurant to deliver healthy food.",
+    "year2": "2022",
+    "year2Text": "Happily in the fourth year by fulfill the motto."
+  },
+  "menu": {
+    "title": "Try Our Special dishes",
+    "subtitle": "Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the local area.",
+    "seeAllDishes": "See all dishes",
+    "sections": [
+      {
+        "id": 1,
+        "title": "Starters",
+        "items": [
+          { "id": 1, "image": "/IMAGE (5).png", "name": "Raw Scallops from Erquy", "desc": "Shuck the scallop to that used oysters", "price": "$40" },
+          { "id": 2, "image": "/IMAGE (6).png", "name": "Spring Roll", "desc": "Shuck the scallop to that used oysters", "price": "$40" },
+          { "id": 3, "image": "/IMAGE (7).png", "name": "French Onion Soup", "desc": "Shuck the scallop to that used for oysters", "price": "$30" },
+          { "id": 4, "image": "/IMAGE (8).png", "name": "Tomato Bruschetta", "desc": "Bread, olive oil, garlic, black pepper", "price": "$30" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Main Dish",
+        "items": [
+          { "id": 1, "image": "/IMAGE (9).png", "name": "Grilled Salmon with Dill Sauce", "desc": "Shuck the scallop to that used oysters", "price": "$40" },
+          { "id": 2, "image": "/IMAGE (10).png", "name": "Roast Beef with Vegetable", "desc": "Shuck the scallop to that used oysters", "price": "$40" },
+          { "id": 3, "image": "/IMAGE (11).png", "name": "Marrkesh Vegetetarian Curruy", "desc": "Shuck the scallop to that used for oysters", "price": "$30" },
+          { "id": 4, "image": "/IMAGE (12).png", "name": "Spicy Vegan Potato Curry", "desc": "Bread, olive oil, garlic, black pepper", "price": "$30" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Dessert",
+        "items": [
+          { "id": 1, "image": "/IMAGE (13).png", "name": "Apple Pie with Cream", "desc": "Shuck the scallop to that used oysters", "price": "$40" },
+          { "id": 2, "image": "/IMAGE (14).png", "name": "Lemon Meringue Pie", "desc": "Shuck the scallop to that used oysters", "price": "$40" }
+        ]
+      }
+    ]
+  },
+  "swiper": {
+    "title": "Our Clients Say",
+    "subtitle": "We love to hear from customers, so please leave a comment or say hello in an email.",
+    "testimonials": [
+      { "name": "Natasha D", "location": "Newyork", "text": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy." },
+      { "name": "Jack Sparrow", "location": "Salt Lake City", "text": "I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own." },
+      { "name": "Martin Doe", "location": "San Diego", "text": "Perfectly known for delicious food. Anywhere you go your hunger is satisfied and they always give best fried chicken & burgers." },
+      { "name": "Natasha D", "location": "Newyork", "text": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy." },
+      { "name": "Jack Sparrow", "location": "Salt Lake City", "text": "I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own." }
+    ]
+  },
+  "services": {
+    "title": "Our Great Services",
+    "text": "The atmosphere set the stage. It's about more than just a dining room away from your home. food takes the spotlight as guests.",
+    "service1": "Opened 24/7",
+    "service2": "Special Menus",
+    "service3": "Home Delivery"
+  },
+  "offer": {
+    "title": "Our Offer dishes",
+    "subtitle": "Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now the dishes are in offers use it based on hunger.",
+    "item1Title": "Chicken Burger",
+    "item1Text": "Chicken burger with the tasty toppings and leaves.",
+    "item2Title": "Chicken Pizza",
+    "item2Text": "Pizza with multiple flavor and the toping are mixed."
+  },
+  "dishes": {
+    "title": "Popular Dishes",
+    "subtitle": "There is a game between the waiters in restaurant to see who serves the food to each table fastest. That led to attempting the Guinness Record.",
+    "seeAllDishes": "See all dishes",
+    "items": [
+      { "id": 1, "image": "/IMAGE (18).png", "title": "Chicken Manjoori", "price": "$15", "description": "Dish relished by all age groups as a starter dish at parties." },
+      { "id": 2, "image": "/IMAGE (19).png", "title": "Hotdog", "price": "$10", "description": "Grilled sausage served in the slit of a partially sliced bun." },
+      { "id": 3, "image": "/IMAGE (20).png", "title": "Fresh Salmon", "price": "$5", "description": "Beat the health blues with our Super Immune Blue Juice Recipe." },
+      { "id": 4, "image": "/IMAGE (21).png", "title": "Veg Burger", "price": "$10", "description": "Burgers may be made from ingredients like beans." }
+    ]
+  },
+  "news": {
+    "title": "Be First Who Read News",
+    "subtitle": "Explore the latest stories about our dishes, offers, events and future plans here.",
+    "viewMore": "View Morex",
+    "items": [
+      { "id": 1, "image": "/IMAGE (23).png", "category": "Delicious", "date": "March 19, 2022", "title": "The Legend Of US Cuisine: The Story Of Hungry People", "description": "Capitalize on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality." },
+      { "id": 2, "image": "/IMAGE (24).png", "category": "Cooking", "date": "March 19, 2022", "title": "The Most Popular Delicious Food Of Mediterranean Cuisine", "description": "Strategies on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality." }
+    ]
+  },
+  "reservation": {
+    "title": "Book Your Table",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "personsPlaceholder": "Persons",
+    "timingPlaceholder": "Timing",
+    "bookButton": "Book A Table"
+  },
+  "footer": {
+    "hashtag": "#TheTastEat",
+    "address": "5 Rue Dalou, 75015 Paris",
+    "phone": "+123 456 789",
+    "email": "josefin@mail.com",
+    "newsletterText": "Join our mailing list for updates,",
+    "newsletterText2": "Get news & offers events.",
+    "emailPlaceholder": "Email",
+    "subscribe": "Subscribe",
+    "hoursMonFri": "Mon - Fri:",
+    "hoursMonFriTime": "7.00am - 6.00pm",
+    "hoursSat": "Sat:",
+    "hoursSatTime": "7.00am - 6.00pm",
+    "hoursSun": "Sun:",
+    "hoursSunTime": "8.00am - 6.00pm",
+    "copyright": "© Copyright - TastEat | Designed by",
+    "poweredBy": "Powered by",
+    "designer": "VictorFlow",
+    "platform": "Webflow",
+    "styleguide": "Styleguide",
+    "licenses": "Licenses",
+    "protected": "Protected",
+    "notFound": "Not Found"
+  },
+  "langNames": {
+    "uz": "O'zbekcha",
+    "ru": "Русский",
+    "en": "English"
+  }
+}

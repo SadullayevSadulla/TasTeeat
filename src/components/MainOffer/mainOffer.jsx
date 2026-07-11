@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const MainOffer = () => {
+  const { t } = useTranslation();
   return (
     <section id="pages" className="py-[70px] lg:py-[140px]">
       <div className="container">
@@ -6,13 +9,11 @@ const MainOffer = () => {
           <img src="/Frame (10).png" alt="" className="w-[40px] lg:w-auto" />
 
           <h1 className="mt-5 text-[28px] sm:text-[34px] lg:text-[40px] font-['Cormorant_Infant'] text-[#292E36]">
-            Our Offer dishes
+            {t("offer.title")}
           </h1>
 
           <p className="mt-4 max-w-[700px] text-[16px] lg:text-[20px] leading-[26px] lg:leading-[32px] text-[#555555] font-['Josefin_Sans']">
-            Our chefs create melt-in-your-mouth dishes that'll satiate even
-            the fussiest eaters now the dishes are in offers use it based on
-            hunger.
+            {t("offer.subtitle")}
           </p>
         </div>
 
@@ -30,10 +31,10 @@ const MainOffer = () => {
             />
             <div className="absolute left-[16px] bottom-[14px] sm:left-[35px] sm:bottom-[45px] z-20">
               <h1 className="text-[20px] sm:text-[32px] lg:text-[40px] text-[#292E36] font-['Cormorant_Infant']">
-                Chicken Burger
+                {t("offer.item1Title")}
               </h1>
               <p className="mt-1 sm:mt-3 w-[150px] sm:w-[220px] lg:w-[250px] text-[12px] sm:text-[17px] lg:text-[20px] leading-[16px] sm:leading-[26px] lg:leading-[30px] text-[#555555] font-['Josefin_Sans']">
-                Chicken burger with the tasty toppings and leaves.
+                {t("offer.item1Text")}
               </p>
             </div>
             <img
@@ -57,10 +58,10 @@ const MainOffer = () => {
             />
             <div className="absolute left-[16px] bottom-[14px] sm:left-[35px] sm:bottom-[45px] z-20">
               <h1 className="text-[20px] sm:text-[32px] lg:text-[40px] text-[#292E36] font-['Cormorant_Infant']">
-                Chicken Pizza
+                {t("offer.item2Title")}
               </h1>
               <p className="mt-1 sm:mt-3 w-[150px] sm:w-[220px] lg:w-[250px] text-[12px] sm:text-[17px] lg:text-[20px] leading-[16px] sm:leading-[26px] lg:leading-[30px] text-[#555555] font-['Josefin_Sans']">
-                Pizza with multiple flavor and the toping are mixed.
+                {t("offer.item2Text")}
               </p>
             </div>
             <img

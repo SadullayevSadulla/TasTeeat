@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const Main = () => {
+  const { t } = useTranslation();
   return (
     <main id="about" className="container">
       <div className="main_t flex flex-col sm:flex-row items-start sm:items-center justify-between mt-[60px] lg:mt-[100px] flex-wrap gap-[30px] sm:gap-[15px]">
@@ -8,8 +11,8 @@ const Main = () => {
           </div>
 
           <div className="card_t flex flex-col">
-            <h1 className="font-['Cormorant_Infant'] text-[24px] lg:text-[30px] font-[400]">Locate Us</h1>
-            <p className="font-['Cormorant_Infant'] text-[15px] lg:text-[16px]">Riverside 25, San Diego, California</p>
+            <h1 className="font-['Cormorant_Infant'] text-[24px] lg:text-[30px] font-[400]">{t("main.locateUsTitle")}</h1>
+            <p className="font-['Cormorant_Infant'] text-[15px] lg:text-[16px]">{t("main.locateUsText")}</p>
           </div>
         </div>
 
@@ -19,8 +22,8 @@ const Main = () => {
           </div>
 
           <div className="card_t flex flex-col">
-            <h1 className="font-['Cormorant_Infant'] text-[24px] lg:text-[30px] font-[400]">Open Hours</h1>
-            <p className="font-['Cormorant_Infant'] text-[15px] lg:text-[16px]">Mon To Fri 9:00 AM - 9:00 PM</p>
+            <h1 className="font-['Cormorant_Infant'] text-[24px] lg:text-[30px] font-[400]">{t("main.openHoursTitle")}</h1>
+            <p className="font-['Cormorant_Infant'] text-[15px] lg:text-[16px]">{t("main.openHoursText")}</p>
           </div>
         </div>
 
@@ -30,8 +33,8 @@ const Main = () => {
           </div>
 
           <div className="card_t flex flex-col">
-            <h1 className="font-['Cormorant_Infant'] text-[24px] lg:text-[30px] font-[400]">Reservation</h1>
-            <p className="text-[16px] lg:text-[20px] font-[400] font-['Cormorant_Infant']">restaurantate@gmail.com</p>
+            <h1 className="font-['Cormorant_Infant'] text-[24px] lg:text-[30px] font-[400]">{t("main.reservationTitle")}</h1>
+            <p className="text-[16px] lg:text-[20px] font-[400] font-['Cormorant_Infant']">{t("main.reservationEmail")}</p>
           </div>
         </div>
       </div>
@@ -47,20 +50,20 @@ const Main = () => {
         <div className="main_tt w-full">
           <div className="main_hp text-left">
             <h1 className="font-['Cormorant_Infant'] text-[28px] sm:text-[34px] lg:text-[40px] font-[400]">
-              The Delicious Story
+              {t("main.storyTitle")}
             </h1>
             <p className="font-['Cormorant_Infant'] max-w-[559px] text-[15px] lg:text-[16px]">
-              The people, food and the prime locations make the perfect place for the friends & family to come together and have great time.
+              {t("main.storyText")}
             </p>
           </div>
           <div className="main_o flex flex-row items-start justify-start gap-[30px] sm:gap-[50px] mt-[30px] mb-[30px] text-left">
             <div className="main_u">
-              <h1 className="font-['Cormorant_Infant'] text-[26px] lg:text-[30px] font-[400]">2018</h1>
-              <p className="font-['Cormorant_Infant'] text-[15px] lg:text-[16px]">Plan for this restaurant to deliver healthy food.</p>
+              <h1 className="font-['Cormorant_Infant'] text-[26px] lg:text-[30px] font-[400]">{t("main.year1")}</h1>
+              <p className="font-['Cormorant_Infant'] text-[15px] lg:text-[16px]">{t("main.year1Text")}</p>
             </div>
             <div className="main_u">
-              <h1 className="font-['Cormorant_Infant'] text-[26px] lg:text-[30px] font-[400]">2022</h1>
-              <p className="font-['Cormorant_Infant'] text-[15px] lg:text-[16px]">Happily in the fourth year by fulfill the motto.</p>
+              <h1 className="font-['Cormorant_Infant'] text-[26px] lg:text-[30px] font-[400]">{t("main.year2")}</h1>
+              <p className="font-['Cormorant_Infant'] text-[15px] lg:text-[16px]">{t("main.year2Text")}</p>
             </div>
           </div>
           <div className="main_t flex justify-start">

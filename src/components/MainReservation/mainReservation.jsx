@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 function MainReservation() {
+  const { t } = useTranslation();
   return (
     <section
       id="contact"
@@ -18,21 +21,21 @@ function MainReservation() {
           </div>
 
           <h1 className="text-center text-white text-[28px] sm:text-[36px] lg:text-[45px] font-['Cormorant_Infant'] mt-5 mb-8 lg:mb-12">
-            Book Your Table
+            {t("reservation.title")}
           </h1>
 
           <form>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-8 mb-5 sm:mb-8">
               <input
                 type="text"
-                placeholder="Name"
+                placeholder={t("reservation.namePlaceholder")}
                 required
                 className="h-[56px] sm:h-[64px] lg:h-[72px] bg-transparent border border-[#6B6F76] px-5 lg:px-7 text-[16px] lg:text-[22px] text-white placeholder:text-white outline-none w-full"
               />
 
               <input
                 type="email"
-                placeholder="Email"
+                placeholder={t("reservation.emailPlaceholder")}
                 required
                 className="h-[56px] sm:h-[64px] lg:h-[72px] bg-transparent border border-[#6B6F76] px-5 lg:px-7 text-[16px] lg:text-[22px] text-white placeholder:text-white outline-none w-full"
               />
@@ -41,7 +44,7 @@ function MainReservation() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
               <input
                 type="number"
-                placeholder="Persons"
+                placeholder={t("reservation.personsPlaceholder")}
                 required
                 min="1"
                 className="h-[56px] sm:h-[64px] lg:h-[72px] bg-transparent border border-[#6B6F76] px-5 lg:px-7 text-[16px] lg:text-[22px] text-white placeholder:text-white outline-none w-full"
@@ -49,7 +52,7 @@ function MainReservation() {
 
               <input
                 type="text"
-                placeholder="Timing"
+                placeholder={t("reservation.timingPlaceholder")}
                 required
                 className="h-[56px] sm:h-[64px] lg:h-[72px] bg-transparent border border-[#6B6F76] px-5 lg:px-7 text-[16px] lg:text-[22px] text-white placeholder:text-white outline-none w-full"
               />
@@ -66,7 +69,7 @@ function MainReservation() {
                 type="submit"
                 className="w-full sm:w-[250px] h-[56px] sm:h-[64px] lg:h-[68px] bg-white text-[#292E36] text-[16px] lg:text-[22px] font-['Josefin_Sans'] hover:bg-[#E1B168] hover:text-white duration-300"
               >
-                Book A Table
+                {t("reservation.bookButton")}
               </button>
             </div>
           </form>

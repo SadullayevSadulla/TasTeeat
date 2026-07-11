@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "menu": "Bizning menyu",
+    "pages": "Sahifalar",
+    "blog": "Blog",
+    "contact": "Bog'lanish"
+  },
+  "header": {
+    "call": "Qo'ng'iroq - 123 456 789",
+    "reservation": "Bron qilish",
+    "welcomeTo": "Xush kelibsiz",
+    "restaurant": "Restoranimizga",
+    "heroSubtitle": "Odamlar, taom va qulay joylashuv do'stlar va oila birga vaqt o'tkazishi uchun ajoyib joy yaratadi.",
+    "viewMenu": "Menyuni ko'rish"
+  },
+  "main": {
+    "locateUsTitle": "Manzilimiz",
+    "locateUsText": "Riverside 25, San-Diego, Kaliforniya",
+    "openHoursTitle": "Ish vaqti",
+    "openHoursText": "Dush-Juma 9:00 - 21:00",
+    "reservationTitle": "Bron qilish",
+    "reservationEmail": "restaurantate@gmail.com",
+    "storyTitle": "Mazali tarix",
+    "storyText": "Odamlar, taom va qulay joylashuv do'stlar va oila birga vaqt o'tkazishi uchun ajoyib joy yaratadi.",
+    "year1": "2018",
+    "year1Text": "Ushbu restoranning maqsadi — sog'lom taomlar taqdim etish.",
+    "year2": "2022",
+    "year2Text": "O'z shiorimizga sodiq qolib, to'rtinchi yilni quvonch bilan nishonlamoqdamiz."
+  },
+  "menu": {
+    "title": "Maxsus taomlarimizni tatib ko'ring",
+    "subtitle": "Biz bilan ovqatlanganingizda, mahalliy hududga xos individual uslubda yaratilgan muhitda ajoyib taomlardan bahramand bo'lasiz.",
+    "seeAllDishes": "Barcha taomlarni ko'rish",
+    "sections": [
+      {
+        "id": 1,
+        "title": "Salatlar",
+        "items": [
+          { "id": 1, "image": "/IMAGE (5).png", "name": "Erkidan xom morjon baliq", "desc": "Ustritsalar kabi tayyorlangan morjon baliq", "price": "$40" },
+          { "id": 2, "image": "/IMAGE (6).png", "name": "Bahor rulet", "desc": "Ustritsalar kabi tayyorlangan morjon baliq", "price": "$40" },
+          { "id": 3, "image": "/IMAGE (7).png", "name": "Fransuzcha piyoz sho'rva", "desc": "Ustritsalar kabi tayyorlangan morjon baliq", "price": "$30" },
+          { "id": 4, "image": "/IMAGE (8).png", "name": "Pomidorli brusketta", "desc": "Non, zaytun moyi, sarimsoq, qora murch", "price": "$30" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Asosiy taomlar",
+        "items": [
+          { "id": 1, "image": "/IMAGE (9).png", "name": "Ukrop sousli grilda pishirilgan losos", "desc": "Ustritsalar kabi tayyorlangan morjon baliq", "price": "$40" },
+          { "id": 2, "image": "/IMAGE (10).png", "name": "Sabzavotli qovurilgan mol go'shti", "desc": "Ustritsalar kabi tayyorlangan morjon baliq", "price": "$40" },
+          { "id": 3, "image": "/IMAGE (11).png", "name": "Marrakesh vegetarian karrisi", "desc": "Ustritsalar kabi tayyorlangan morjon baliq", "price": "$30" },
+          { "id": 4, "image": "/IMAGE (12).png", "name": "O'tkir vegan kartoshka karrisi", "desc": "Non, zaytun moyi, sarimsoq, qora murch", "price": "$30" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Desert",
+        "items": [
+          { "id": 1, "image": "/IMAGE (13).png", "name": "Qaymoqli olma pirogi", "desc": "Ustritsalar kabi tayyorlangan morjon baliq", "price": "$40" },
+          { "id": 2, "image": "/IMAGE (14).png", "name": "Limonli meringa pirogi", "desc": "Ustritsalar kabi tayyorlangan morjon baliq", "price": "$40" }
+        ]
+      }
+    ]
+  },
+  "swiper": {
+    "title": "Mijozlarimiz fikri",
+    "subtitle": "Mijozlarimizdan fikr-mulohaza olishni yaxshi ko'ramiz, izoh qoldiring yoki elektron pochta orqali murojaat qiling.",
+    "testimonials": [
+      { "name": "Natasha D", "location": "Nyu-York", "text": "Ular ajoyib ta'mi va taomlari bilan mashhur. Qayerga bormang, ochligingiz qondiriladi. Eng mazali tovuq va burgerlari bor." },
+      { "name": "Jek Sparrou", "location": "Solt-Leyk-Siti", "text": "Men bu ajoyib restoranga bir necha marta tashrif buyurdim, taom mutlaqo a'lo va detallarga e'tibor benihoya yuqori." },
+      { "name": "Martin Do", "location": "San-Diego", "text": "Mazali taomlari bilan mashhur. Qayerga bormang, ochligingiz qondiriladi va doim eng yaxshi qovurilgan tovuq va burgerlar taklif etiladi." },
+      { "name": "Natasha D", "location": "Nyu-York", "text": "Ular ajoyib ta'mi va taomlari bilan mashhur. Qayerga bormang, ochligingiz qondiriladi. Eng mazali tovuq va burgerlari bor." },
+      { "name": "Jek Sparrou", "location": "Solt-Leyk-Siti", "text": "Men bu ajoyib restoranga bir necha marta tashrif buyurdim, taom mutlaqo a'lo va detallarga e'tibor benihoya yuqori." }
+    ]
+  },
+  "services": {
+    "title": "Bizning ajoyib xizmatlarimiz",
+    "text": "Muhit sahnani yaratadi. Bu shunchaki uyingizdan uzoqdagi ovqatlanish xonasi emas — mehmonlar uchun taom bosh qahramonga aylanadi.",
+    "service1": "24/7 ochiq",
+    "service2": "Maxsus menyular",
+    "service3": "Uyga yetkazib berish"
+  },
+  "offer": {
+    "title": "Aksiyadagi taomlarimiz",
+    "subtitle": "Oshpazlarimiz og'izda erib ketadigan taomlarni tayyorlashadi, hatto eng talabchan mehmonlarni ham qoniqtiradi — endi bu taomlar aksiyada.",
+    "item1Title": "Tovuqli burger",
+    "item1Text": "Mazali qo'shimchalar va ko'katlar bilan tovuqli burger.",
+    "item2Title": "Tovuqli pitsa",
+    "item2Text": "Turli xil ta'mlar va aralashgan qo'shimchalar bilan pitsa."
+  },
+  "dishes": {
+    "title": "Mashhur taomlar",
+    "subtitle": "Restoran ofitsiantlari orasida kim taomni stolga tezroq yetkazib beradi degan o'yin bor. Bu Ginnes rekordiga urinishga olib keldi.",
+    "seeAllDishes": "Barcha taomlarni ko'rish",
+    "items": [
+      { "id": 1, "image": "/IMAGE (18).png", "title": "Tovuqli Manjuri", "price": "$15", "description": "Barcha yosh guruhlari tomonidan ziyofatlarda boshlang'ich taom sifatida yoqtiriladigan taom." },
+      { "id": 2, "image": "/IMAGE (19).png", "title": "Xot-dog", "price": "$10", "description": "Qisman kesilgan bulochka ichida qovurilgan kolbasa." },
+      { "id": 3, "image": "/IMAGE (20).png", "title": "Yangi losos", "price": "$5", "description": "Super Immune Blue Juice retsepti bilan charchoqni yenging." },
+      { "id": 4, "image": "/IMAGE (21).png", "title": "Sabzavotli burger", "price": "$10", "description": "Burgerlar loviya kabi ingredientlardan tayyorlanishi mumkin." }
+    ]
+  },
+  "news": {
+    "title": "Yangiliklarni birinchi bo'lib o'qing",
+    "subtitle": "Taomlarimiz, aksiyalarimiz, tadbirlarimiz va kelajakdagi rejalarimiz haqidagi so'nggi maqolalarni ko'ring.",
+    "viewMore": "Batafsil",
+    "items": [
+      { "id": 1, "image": "/IMAGE (23).png", "category": "Mazali", "date": "19-mart, 2022", "title": "AQSH oshxonasi afsonasi: och odamlar hikoyasi", "description": "Taom sifatini sinash uchun ijodiy yondashuv va qo'shimcha qiymatni aniqlashda mavjud imkoniyatlardan foydalanish." },
+      { "id": 2, "image": "/IMAGE (24).png", "category": "Pazandachilik", "date": "19-mart, 2022", "title": "O'rta yer dengizi oshxonasining eng mashhur mazali taomlari", "description": "Taom sifatini sinash uchun ijodiy yondashuv va qo'shimcha qiymatni aniqlash strategiyalari." }
+    ]
+  },
+  "reservation": {
+    "title": "Stolingizni bron qiling",
+    "namePlaceholder": "Ism",
+    "emailPlaceholder": "Email",
+    "personsPlaceholder": "Mehmonlar soni",
+    "timingPlaceholder": "Vaqt",
+    "bookButton": "Stolni bron qilish"
+  },
+  "footer": {
+    "hashtag": "#TheTastEat",
+    "address": "5 Rue Dalou, 75015 Parij",
+    "phone": "+123 456 789",
+    "email": "josefin@mail.com",
+    "newsletterText": "Yangiliklardan xabardor bo'lish uchun ro'yxatdan o'ting,",
+    "newsletterText2": "yangiliklar va aksiyalarni oling.",
+    "emailPlaceholder": "Email",
+    "subscribe": "Obuna bo'lish",
+    "hoursMonFri": "Dush - Juma:",
+    "hoursMonFriTime": "7.00 - 18.00",
+    "hoursSat": "Shanba:",
+    "hoursSatTime": "7.00 - 18.00",
+    "hoursSun": "Yakshanba:",
+    "hoursSunTime": "8.00 - 18.00",
+    "copyright": "© Mualliflik huquqi - TastEat | Ishlab chiqdi",
+    "poweredBy": "Quvvatlaydi",
+    "designer": "VictorFlow",
+    "platform": "Webflow",
+    "styleguide": "Uslub qo'llanmasi",
+    "licenses": "Litsenziyalar",
+    "protected": "Himoyalangan",
+    "notFound": "Topilmadi",
+    "notFound2": "Sahifa topilmadi"
+  },
+  "langNames": {
+    "uz": "O'zbekcha",
+    "ru": "Русский",
+    "en": "English"
+  }
+}
