@@ -3,8 +3,8 @@ import menuData from "./menuData";
 const MainMenu = () => {
     return (
         <section className="container">
-            <div className="section mt-[100px] flex gap-[55px] mb-[100px]">
-                <div className="section_left sticky top-[40px] h-fit">
+            <div className="section mt-[60px] lg:mt-[100px] flex flex-col xl:flex-row gap-[40px] xl:gap-[55px] mb-[60px] lg:mb-[100px]">
+                <div className="section_left xl:sticky xl:top-[40px] h-fit ">
                     <div className="section_logo">
                         <img src="/Frame (5).png" alt="Logo" />
                     </div>

@@ -1,13 +1,13 @@
 const Footer = () => {
     return (
-        <footer className="bg-[#292E36] text-white pt-[120px]">
-            <div className="container mx-auto">
-                <div className="flex justify-between items-center mb-[70px]">
-                    <h2 className="text-[32px] font-['Cormorant_Infant']">
+        <footer className="bg-[#292E36] text-white pt-[60px] lg:pt-[120px]">
+            <div className="container mx-auto px-4">
+                <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0 mb-[40px] lg:mb-[70px] text-center lg:text-left">
+                    <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-['Cormorant_Infant'] order-2 lg:order-1">
                         #TheTastEat
                     </h2>
-                    <img src="/IMAGE.png" alt="Logo" className="" />
-                    <div className="footer_icon flex gap-[10px]" >
+                    <img src="/IMAGE.png" alt="Logo" className="order-1 lg:order-2 h-[50px] lg:h-auto" />
+                    <div className="footer_icon flex gap-[14px] lg:gap-[10px] order-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="22px" viewBox="0 0 24 24">
                             <path d="M0 0h24v24H0z" fill="none" />
                             <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
@@ -24,46 +24,48 @@ const Footer = () => {
                             <path d="M0 0h24v24H0z" fill="none" />
                             <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23" />
                         </svg>
-
                     </div>
                 </div>
-                <div className="grid grid-cols-3 gap-20 items-center pb-[80px]">
-                    <div>
-                        <img src="/Frame (15).png" alt="" className="mb-8 flex itemis-center justify-center" />
-                        <p className="text-[22px] font-['Josefin_Sans'] leading-10">
+
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-[40px] lg:gap-20 items-center lg:items-center pb-[50px] lg:pb-[80px] text-center lg:text-left">
+                    <div className="flex flex-col items-center lg:items-start">
+                        <img src="/Frame (15).png" alt="" className="mb-6 lg:mb-8 w-[36px] lg:w-auto" />
+                        <p className="text-[17px] sm:text-[19px] lg:text-[22px] font-['Josefin_Sans'] leading-[30px] lg:leading-10">
                             5 Rue Dalou, 75015 Paris
                         </p>
-                        <p className="text-[#E1B168] text-[22px] font-['Josefin_Sans'] mt-2">
+                        <p className="text-[#E1B168] text-[17px] sm:text-[19px] lg:text-[22px] font-['Josefin_Sans'] mt-2">
                             +123 456 789
                         </p>
-                        <p className="text-[#E1B168] text-[22px] font-['Josefin_Sans'] mt-2">
+                        <p className="text-[#E1B168] text-[17px] sm:text-[19px] lg:text-[22px] font-['Josefin_Sans'] mt-2">
                             josefin@mail.com
                         </p>
                     </div>
+
                     <div className="flex flex-col items-center">
-                        <p className="text-center text-[22px] leading-[40px] font-['Josefin_Sans'] max-w-[500px]">
+                        <p className="text-center text-[17px] sm:text-[19px] lg:text-[22px] leading-[28px] lg:leading-[40px] font-['Josefin_Sans'] max-w-[500px]">
                             Join our mailing list for updates,
                             <br />
                             Get news & offers events.
                         </p>
-                        <div className="flex mt-10 w-full">
+                        <div className="flex flex-col sm:flex-row mt-8 lg:mt-10 gap-3 sm:gap-0">
                             <input
                                 type="email"
                                 placeholder="Email"
-                                className="flex-1 h-[68px] bg-transparent border border-[#575B62] px-6 text-[20px] outline-none placeholder:text-[#FFFFFF]"
+                                className="flex-1 h-[56px] lg:h-[68px] bg-transparent border border-[#575B62] px-6 text-[16px] lg:text-[20px] outline-none placeholder:text-[#FFFFFF]"
                             />
-                            <button className="w-[220px] h-[68px] bg-white text-[#292E36] text-[22px] hover:bg-[#E1B168] hover:text-white duration-300 cursor-pointer">
+                            <button className="w-full sm:h-[56px] lg:h-[68px] bg-white text-[#292E36] text-[17px] lg:text-[22px] hover:bg-[#E1B168] hover:text-white duration-300 cursor-pointer">
                                 Subscribe
                             </button>
                         </div>
                     </div>
-                    <div className="flex flex-col items-end">
+
+                    <div className="flex flex-col items-center lg:items-end">
                         <img
                             src="/Frame (18).png"
                             alt=""
-                            className="mb-8"
+                            className="mb-6 lg:mb-8 w-[36px] lg:w-auto"
                         />
-                        <div className="space-y-4 text-[22px] font-['Josefin_Sans']">
+                        <div className="space-y-3 lg:space-y-4 text-[17px] sm:text-[19px] lg:text-[22px] font-['Josefin_Sans']">
                             <p>
                                 <span className="text-[#E1B168]">Mon - Fri:</span>{" "}
                                 7.00am - 6.00pm
@@ -79,13 +81,14 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border-t border-[#3F434B] py-8 flex justify-between items-center">
-                    <p className="text-[20px] font-['Josefin_Sans']">
+
+                <div className="border-t border-[#3F434B] py-6 lg:py-8 flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0 text-center lg:text-left">
+                    <p className="text-[14px] sm:text-[17px] lg:text-[20px] font-['Josefin_Sans']">
                         © Copyright - TastEat | Designed by{" "}
                         <span className="text-[#E1B168]">VictorFlow</span> - Powered by{" "}
                         <span className="text-[#E1B168]">Webflow</span>
                     </p>
-                    <div className="flex gap-8 text-[20px] font-['Josefin_Sans']">
+                    <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 text-[14px] sm:text-[17px] lg:text-[20px] font-['Josefin_Sans']">
                         <a href="#" className="hover:text-[#E1B168]">
                             Styleguide
                         </a>
