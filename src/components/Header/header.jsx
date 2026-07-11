@@ -5,22 +5,22 @@ const Header = () => {
 
     const navLinks = [
         {
-            label:"Home"
+            label: "Home"
         },
         {
-            label:"About Us"
+            label: "About Us"
         },
         {
-            label:"Our Menu"
+            label: "Our Menu"
         },
         {
-            label:"Pages", 
+            label: "Pages",
         },
         {
-            label:"Blog"
+            label: "Blog"
         },
         {
-            label:"Contact Us"
+            label: "Contact Us"
         },
     ];
 
@@ -38,58 +38,63 @@ const Header = () => {
                         </button>
                     </div>
 
-                    <div className="flex items-center justify-between bg-[#292E36] border-t border-white/10 px-5 py-3">
-                        <button
-                            onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            aria-label="Toggle menu"
-                            className="bg-white w-[40px] h-[40px] flex items-center justify-center cursor-pointer flex-shrink-0"
-                        >
-                            <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="18" height="2" fill="#292E36" />
-                                <rect y="5.5" width="18" height="2" fill="#292E36" />
-                                <rect y="11" width="18" height="2" fill="#292E36" />
-                            </svg>
-                        </button>
+                    <div className="relative">
+                        <div className="flex items-center justify-between bg-[#292E36] border-t border-white/10 px-5 py-3">
+                            <button
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                aria-label="Toggle menu"
+                                className="bg-white w-[40px] h-[40px] flex items-center justify-center cursor-pointer flex-shrink-0"
+                            >
+                                <svg
+                                    width="18"
+                                    height="13"
+                                    viewBox="0 0 18 13"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect width="18" height="2" fill="#292E36" />
+                                    <rect y="5.5" width="18" height="2" fill="#292E36" />
+                                    <rect y="11" width="18" height="2" fill="#292E36" />
+                                </svg>
+                            </button>
 
-                        <div className="flex items-center gap-3">
-                            <a href="https://www.instagram.com/sadullayev.0627/" target="_blank" rel="noopener noreferrer" className="w-[32px] h-[32px] rounded-full  flex items-center justify-center">
-                                <img src="/IMAGE (1).png" alt="Instagram" className="w-[14px] h-[14px]" />
-                            </a>
-                            <a href="#" className="w-[32px] h-[32px] rounded-full  flex items-center justify-center">
-                                <img src="/Vector.png" alt="Facebook" className="w-[14px] h-[14px]" />
-                            </a>
-                            <a href="#" className="w-[32px] h-[32px] rounded-full  flex items-center justify-center">
-                                <img src="/IMAGE (2).png" alt="Twitter" className="w-[14px] h-[14px]" />
-                            </a>
-                            <a href="#" className="w-[32px] h-[32px] rounded-full  flex items-center justify-center">
-                                <img src="/Vector (1).png" alt="LinkedIn" className="w-[14px] h-[14px]" />
-                            </a>
+                            <div className="flex items-center gap-3">
+                                <a
+                                    href="https://www.instagram.com/sadullayev.0627/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-[32px] h-[32px] flex items-center justify-center"
+                                >
+                                    <img src="/IMAGE (1).png" alt="Instagram" className="w-[14px] h-[14px]" />
+                                </a>
+
+                                <a href="#" className="w-[32px] h-[32px] flex items-center justify-center">
+                                    <img src="/Vector.png" alt="Facebook" className="w-[14px] h-[14px]" />
+                                </a>
+
+                                <a href="#" className="w-[32px] h-[32px] flex items-center justify-center">
+                                    <img src="/IMAGE (2).png" alt="Twitter" className="w-[14px] h-[14px]" />
+                                </a>
+
+                                <a href="#" className="w-[32px] h-[32px] flex items-center justify-center">
+                                    <img src="/Vector (1).png" alt="LinkedIn" className="w-[14px] h-[14px]" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className={`absolute top-[100%] left-0 w-full bg-[#5B5B5B] z-50 overflow-hidden transition-all duration-300 ${isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0" }`}>
+                            <nav className="flex flex-col font-['Josefin_Sans']">
+                                {navLinks.map((link) => (
+                                    <a
+                                        key={link.label}
+                                        href="#"
+                                        className="px-5 py-4 border-b border-white/10 text-white hover:text-[#E1B168] transition duration-300"
+                                    >
+                                        {link.label}
+                                    </a>
+                                ))}
+                            </nav>
                         </div>
                     </div>
-
-                    <div
-                        className={`overflow-hidden transition-all duration-300 bg-[#5B5B5B] ${isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
-                            }`}
-                    >
-                        <nav className="flex flex-col font-['Josefin_Sans']">
-                            {navLinks.map((link) => (
-                                <a
-                                    key={link.label}
-                                    href="#"
-                                    className={`flex items-center justify-between px-5 py-3 border-b border-white/10 ${link.active ? "text-[#E1B168]" : "text-white"
-                                        } hover:text-[#E1B168] transition duration-300`}
-                                >
-                                    {link.label}
-                                    {link.hasDropdown && (
-                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="1.5" />
-                                        </svg>
-                                    )}
-                                </a>
-                            ))}
-                        </nav>
-                    </div>
-
                     <div className="text-center px-5 pt-[50px] pb-[10px]">
                         <h1 className="font-['Josefin_Sans'] text-[34px] sm:text-[42px] font-[400] text-white leading-[1.2]">
                             Welcome to<br />Restaurant

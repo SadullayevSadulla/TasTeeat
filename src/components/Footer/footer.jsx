@@ -29,7 +29,7 @@ const Footer = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-[40px] lg:gap-20 items-center lg:items-center pb-[50px] lg:pb-[80px] text-center lg:text-left">
                     <div className="flex flex-col items-center lg:items-start">
-                        <img src="/Frame (15).png" alt="" className="mb-6 lg:mb-8 w-[36px] lg:w-auto" />
+                        <img src="/Frame (15).png" alt="" className="mb-6 lg:mb-8 w-[100px] " />
                         <p className="text-[17px] sm:text-[19px] lg:text-[22px] font-['Josefin_Sans'] leading-[30px] lg:leading-10">
                             5 Rue Dalou, 75015 Paris
                         </p>
@@ -47,13 +47,15 @@ const Footer = () => {
                             <br />
                             Get news & offers events.
                         </p>
-                        <div className="flex flex-col sm:flex-row mt-8 lg:mt-10 gap-3 sm:gap-0">
+                        <div className="flex flex-col sm:flex-row mt-8 lg:mt-10 gap-3">
                             <input
                                 type="email"
                                 placeholder="Email"
-                                className="flex-1 h-[56px] lg:h-[68px] bg-transparent border border-[#575B62] px-6 text-[16px] lg:text-[20px] outline-none placeholder:text-[#FFFFFF]"
+                                className=" sm:flex-1 h-[50px] sm:h-[56px] lg:h-[68px] bg-transparent border border-[#575B62] px-4 sm:px-5 lg:px-6 text-[16px] lg:text-[20px]  text-white outline-none  placeholder:text-white"
                             />
-                            <button className="w-full sm:h-[56px] lg:h-[68px] bg-white text-[#292E36] text-[17px] lg:text-[22px] hover:bg-[#E1B168] hover:text-white duration-300 cursor-pointer">
+
+                            <button
+                                className=" w-full sm:w-[180px] lg:w-[220px] h-[50px] sm:h-[56px] lg:h-[68px] px-6 lg:px-8  bg-white text-[#292E36] text-[16px] sm:text-[18px] lg:text-[22px] font-semibold hover:bg-[#E1B168]  hover:text-white transition-all duration-300 cursor-pointer">
                                 Subscribe
                             </button>
                         </div>
