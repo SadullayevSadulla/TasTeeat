@@ -1,6 +1,6 @@
 const MainOffer = () => {
   return (
-    <section className="py-[70px] lg:py-[140px]">
+    <section id="pages" className="py-[70px] lg:py-[140px]">
       <div className="container">
         <div className="flex flex-col items-center text-center px-4">
           <img src="/Frame (10).png" alt="" className="w-[40px] lg:w-auto" />

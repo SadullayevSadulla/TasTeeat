@@ -5,27 +5,33 @@ const Header = () => {
 
     const navLinks = [
         {
-            label: "Home"
+            label: "Home",
+            href: "home"
         },
         {
-            label: "About Us"
+            label: "About Us",
+            href: "about"
         },
         {
-            label: "Our Menu"
+            label: "Our Menu",
+            href: "menu"
         },
         {
             label: "Pages",
+            href: "pages"
         },
         {
-            label: "Blog"
+            label: "Blog",
+            href: "blog"
         },
         {
-            label: "Contact Us"
+            label: "Contact Us",
+            href: "contact"
         },
     ];
 
     return (
-        <div className="wrap">
+        <div className="wrap" id="home">
             <header className="bg-[#292E36]">
                 <div className="lg:hidden">
                     <div className="border-b border-white flex flex-col items-center gap-6 py-8 px-5">
@@ -86,7 +92,8 @@ const Header = () => {
                                 {navLinks.map((link) => (
                                     <a
                                         key={link.label}
-                                        href="#"
+                                        href={`#${link.href}`}
+                                        onClick={() => setIsMenuOpen(false)}
                                         className="px-5 py-4 border-b border-white/10 text-white hover:text-[#E1B168] transition duration-300"
                                     >
                                         {link.label}
@@ -137,12 +144,15 @@ const Header = () => {
                         <div className="mt-[20px] flex items-center justify-between">
                             <div className="header_nav">
                                 <nav className="flex items-center gap-8 text-white font-['Josefin_Sans']">
-                                    <a href="#" className="hover:text-[#E1B168] transition duration-300">Home</a>
-                                    <a href="#" className="hover:text-[#E1B168] transition duration-300">About Us</a>
-                                    <a href="#" className="hover:text-[#E1B168] transition duration-300">Our Menu</a>
-                                    <a href="#" className="hover:text-[#E1B168] transition duration-300">Pages</a>
-                                    <a href="#" className="hover:text-[#E1B168] transition duration-300">Blog</a>
-                                    <a href="#" className="hover:text-[#E1B168] transition duration-300">Contact Us</a>
+                                    {navLinks.map((link) => (
+                                        <a
+                                            key={link.label}
+                                            href={`#${link.href}`}
+                                            className="hover:text-[#E1B168] transition duration-300"
+                                        >
+                                            {link.label}
+                                        </a>
+                                    ))}
                                 </nav>
                             </div>
                             <div className="header_icon flex items-center gap-4">

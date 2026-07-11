@@ -1,6 +1,7 @@
 function MainReservation() {
   return (
     <section
+      id="contact"
       className="relative mt-[60px] lg:mt-[100px] bg-cover bg-center py-[60px] sm:py-[100px] lg:py-[150px]"
       style={{ backgroundImage: "url('/IMAGE@2x.png')" }}
     >

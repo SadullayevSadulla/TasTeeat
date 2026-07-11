@@ -1,6 +1,6 @@
 const Main = () => {
   return (
-    <main className="container">
+    <main id="about" className="container">
       <div className="main_t flex flex-col sm:flex-row items-start sm:items-center justify-between mt-[60px] lg:mt-[100px] flex-wrap gap-[30px] sm:gap-[15px]">
         <div className="main_card flex items-center gap-[20px]">
           <div className="card_img">

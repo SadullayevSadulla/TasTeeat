@@ -2,7 +2,7 @@ import newsData from "./newsData";
 
 const MainNews = () => {
     return (
-        <section>
+        <section id="blog">
             <div className="news container">
                 <div className="news_to mt-[60px] lg:mt-[100px] px-4">
                     <div className="news_img flex items-center justify-center">

@@ -2,7 +2,7 @@ import menuData from "./menuData";
 
 const MainMenu = () => {
     return (
-        <section className="container">
+        <section id="menu" className="container">
             <div className="section mt-[60px] lg:mt-[100px] flex flex-col xl:flex-row gap-[40px] xl:gap-[55px] mb-[60px] lg:mb-[100px]">
                 <div className="section_left xl:sticky xl:top-[40px] h-fit w-full xl:w-auto xl:max-w-[400px]">
                     <div className="section_logo flex justify-center xl:justify-start">
