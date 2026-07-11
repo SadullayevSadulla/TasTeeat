@@ -1,4 +1,4 @@
-import Header from "./components/Header/Header";
+import Header from "./components/Header/header";
 import Main from "./components/Main/main";
 import MainMenu from "./components/MainMenu/mainMenu";
 import MainSwiper from "./components/MainSwiper/mainSwiper";
