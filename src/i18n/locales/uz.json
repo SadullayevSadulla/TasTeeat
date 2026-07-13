@@ -83,6 +83,7 @@
     "service3": "Uyga yetkazib berish"
   },
   "offer": {
+    "bosh": "Maxsus taklif",
     "title": "Aksiyadagi taomlarimiz",
     "subtitle": "Oshpazlarimiz og'izda erib ketadigan taomlarni tayyorlashadi, hatto eng talabchan mehmonlarni ham qoniqtiradi — endi bu taomlar aksiyada.",
     "item1Title": "Tovuqli burger",

@@ -83,6 +83,7 @@
     "service3": "Home Delivery"
   },
   "offer": {
+    "bosh": "OFFERES",
     "title": "Our Offer dishes",
     "subtitle": "Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now the dishes are in offers use it based on hunger.",
     "item1Title": "Chicken Burger",
