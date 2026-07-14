@@ -30,3 +30,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .animate-spin-slow {
   animation: spinSlow 10s linear infinite;
 }
+
