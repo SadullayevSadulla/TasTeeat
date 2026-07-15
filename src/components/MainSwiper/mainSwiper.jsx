@@ -5,13 +5,7 @@ import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const avatarImages = [
-    "/Frame (7).png",
-    "/Frame (8).png",
-    "/Frame (9).png",
-    "/Frame (7).png",
-    "/Frame (8).png",
-];
+const avatarImages = [ "/Frame (7).png", "/Frame (8).png", "/Frame (9).png", "/Frame (7).png", "/Frame (8).png",];
 
 const MainSwiper = () => {
     const { t } = useTranslation();
