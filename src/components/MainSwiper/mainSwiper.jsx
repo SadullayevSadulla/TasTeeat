@@ -1,94 +1,113 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-const avatarImages = [ "/Frame (7).png", "/Frame (8).png", "/Frame (9).png", "/Frame (7).png", "/Frame (8).png",];
+const avatarImages = [
+  "/Frame (7).png",
+  "/Frame (8).png",
+  "/Frame (9).png",
+  "/Frame (7).png",
+  "/Frame (8).png",
+];
 
 const MainSwiper = () => {
-    const { t } = useTranslation();
-    const testimonials = t("swiper.testimonials", { returnObjects: true });
+  const { t } = useTranslation();
+  const testimonials = t("swiper.testimonials", { returnObjects: true });
 
-    return (
-        <section>
-            <div className="bg-[#292E36] py-[60px] lg:py-[120px]">
-                <div className="container mx-auto px-4">
-                    <div className="mb-[40px] lg:mb-[60px]">
-                        <img src="/Frame (6).png" alt="" className="w-[36px] lg:w-auto" />
-                        <h1 className="mt-5 text-white text-[28px] sm:text-[34px] lg:text-[40px] font-['Cormorant_Infant']">
-                            {t("swiper.title")}
-                        </h1>
-                        <p className="mt-3 text-[#FFFFFF] font-['Josefin_Sans'] text-[15px] lg:text-[18px]">
-                            {t("swiper.subtitle")}
+  return (
+    <section>
+      <div className="bg-[#292E36] py-[60px] lg:py-[120px]">
+        <div className="container mx-auto px-4">
+          <div className="mb-[40px] lg:mb-[60px]">
+            <img src="/Frame (6).png" alt="" className="w-[36px] lg:w-auto" />
+
+            <h1 className="mt-5 text-white text-[28px] sm:text-[34px] lg:text-[40px] font-['Cormorant_Infant']">
+              {t("swiper.title")}
+            </h1>
+
+            <p className="mt-3 text-[#FFFFFF] font-['Josefin_Sans'] text-[15px] lg:text-[18px]">
+              {t("swiper.subtitle")}
+            </p>
+          </div>
+
+        <Swiper
+  modules={[Autoplay]}
+  loop={true}
+  speed={3000}
+  autoplay={{
+    delay: 1,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: false,
+    reverseDirection: true,
+  }}
+  allowTouchMove={false}
+  breakpoints={{
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  }}
+>
+            {testimonials.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-[#343942] w-full min-h-[260px] sm:h-[340px] p-[24px] sm:p-[35px]">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4 sm:gap-5">
+                      <div className="relative">
+                        <img
+                          src={avatarImages[index % avatarImages.length]}
+                          alt={item.name}
+                          className="w-[64px] h-[64px] sm:w-[90px] sm:h-[90px] rounded-full object-cover"
+                        />
+
+                        <img
+                          src="/Quote.png"
+                          alt=""
+                          className="absolute -top-1 -left-1 w-[20px] sm:w-auto"
+                        />
+                      </div>
+
+                      <div>
+                        <h2 className="text-white text-[22px] sm:text-[30px] font-['Cormorant_Infant']">
+                          {item.name}
+                        </h2>
+
+                        <p className="text-[#E1B168] text-[14px] sm:text-[18px] font-['Josefin_Sans']">
+                          {item.location}
                         </p>
+                      </div>
                     </div>
-                    <Swiper
-                        slidesPerView={3}
-                        spaceBetween={30}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        modules={[Pagination]}
-                        breakpoints={{
-                            0: {
-                                slidesPerView: 1,
-                                spaceBetween: 20,
-                            },
-                            768: {
-                                slidesPerView: 2,
-                                spaceBetween: 24,
-                            },
-                            1200: {
-                                slidesPerView: 3,
-                                spaceBetween: 30,
-                            },
-                        }}
-                    >
-                        {testimonials.map((item, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="bg-[#343942] w-full h-auto min-h-[260px] sm:h-[340px] p-[24px] sm:p-[35px]">
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center gap-4 sm:gap-5">
-                                            <div className="relative">
-                                                <img
-                                                    src={avatarImages[index % avatarImages.length]}
-                                                    alt=""
-                                                    className="w-[64px] h-[64px] sm:w-[90px] sm:h-[90px] rounded-full object-cover"
-                                                />
-                                                <img
-                                                    src="/Quote.png"
-                                                    alt=""
-                                                    className="absolute -top-1 -left-1 w-[20px] sm:w-auto"
-                                                />
-                                            </div>
-                                            <div>
-                                                <h2 className="text-white text-[22px] sm:text-[30px] font-['Cormorant_Infant']">
-                                                    {item.name}
-                                                </h2>
-                                                <p className="text-[#E1B168] text-[14px] sm:text-[18px] font-['Josefin_Sans']">
-                                                    {item.location}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="border-b border-[#797E89] my-5 sm:my-8"></div>
-                                    <p className="text-white text-[15px] sm:text-[20px] leading-[24px] sm:leading-9 font-['Cormorant_Infant']">
-                                        {item.text}
-                                    </p>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                  </div>
+
+                  <div className="border-b border-[#797E89] my-5 sm:my-8"></div>
+
+                  <p className="text-white text-[15px] sm:text-[20px] leading-[24px] sm:leading-9 font-['Cormorant_Infant']">
+                    {item.text}
+                  </p>
                 </div>
-            </div>
-            <section
-                className="w-full h-[250px] sm:h-[400px] lg:h-[600px] bg-cover bg-center bg-scroll lg:bg-fixed bg-no-repeat"
-                style={{ backgroundImage: "url('/IMAGE (15).png')" }}
-            ></section>
-        </section>
-    );
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+
+      <section
+        className="w-full h-[250px] sm:h-[400px] lg:h-[600px] bg-cover bg-center bg-scroll lg:bg-fixed bg-no-repeat"
+        style={{ backgroundImage: "url('/IMAGE (15).png')" }}
+      ></section>
+    </section>
+  );
 };
 
 export default MainSwiper;
